@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Musical</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="container-title">Catálogo Musical</h1>
+
+    <nav>
+      <a href="/albums/create">Cadastrar Álbum</a>
+      <a href="/artists/create">Cadastrar Artista</a>
+      <a href="/genres/create">Cadastrar Gênero</a>
+    </nav>
+
+    <form action="/albums/create" method="POST">
+      <label for="title">Título do Álbum:</label>
+      <input type="text" id="title" name="title" placeholder="Digite o título do álbum">
+
+      <label for="release_year">Ano de Lançamento:</label>
+      <input type="number" id="release_year" name="release_year" placeholder="Digite o ano">
+
+      <label for="artist">Artista:</label>
+      <select id="artist" name="artist">
+        <option value="1">Artista 1</option>
+        <option value="2">Artista 2</option>
+      </select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+</body>
+
+</html>

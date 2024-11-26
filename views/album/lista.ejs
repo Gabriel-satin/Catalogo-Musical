@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Lista de Itens</h1>
+    <nav>
+        <a href="/albums/create">Adicionar Novo</a>
+    </nav>
+    <ul>
+        <% items.forEach(item=> { %>
+            <li>
+                <div class="info">
+                    <strong>
+                        <%= item.title %>
+                    </strong> - <%= item.year %>
+                </div>
+                <div>
+                    <a href="/albums/edit/<%= item.id %>">Editar</a>
+                    <form action="/albums/delete/<%= item.id %>" method="POST" style="display:inline;">
+                        <button type="submit">Excluir</button>
+                    </form>
+                </div>
+            </li>
+            <% }); %>
+    </ul>
+</div>

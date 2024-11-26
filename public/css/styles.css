@@ -1,0 +1,145 @@
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Cabeçalho */
+h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 15px 0;
+  color: #fff; /* Texto branco */
+  text-align: center;
+}
+
+/* Container principal */
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #1a1a1a; /* Fundo escuro */
+  color: #fff; /* Texto branco */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Links de navegação */
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #007bff; /* Azul */
+  color: #fff; /* Texto branco */
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Azul escuro */
+}
+
+/* Formulários */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #007bff; /* Azul */
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  border-radius: 5px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #ccc; /* Cinza para placeholder */
+}
+
+form button {
+  background-color: #007bff; /* Azul */
+  color: #fff; /* Texto branco */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Azul escuro */
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #007bff; /* Azul */
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a; /* Fundo escuro */
+}
+
+li .info {
+  text-align: left;
+}
+
+li button {
+  margin-left: 10px;
+  background-color: #007bff; /* Azul */
+  color: #fff; /* Texto branco */
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #0056b3; /* Azul escuro */
+}
+
+/* Título dentro da box */
+.container-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #007bff; /* Linha azul */
+  padding-bottom: 10px;
+}

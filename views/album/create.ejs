@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Álbum</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Criar Novo Álbum</h1>
+    <form action="/albums/create" method="POST">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="year">Ano de Lançamento:</label>
+        <input type="number" id="year" name="year" required>
+
+        <label for="cover">Capa (URL):</label>
+        <input type="text" id="cover" name="cover">
+
+        <label for="tracks">Faixas:</label>
+        <textarea id="tracks" name="tracks" placeholder="Insira as faixas separadas por vírgulas"></textarea>
+
+        <button type="submit">Criar Álbum</button>
+    </form>
+</body>
+
+</html>
